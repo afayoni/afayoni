@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ponpes Al-kautsar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .donasi-form input, .donasi-form textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+    }
+    .donasi-form button {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ponpes Al-kautsar</h1>
+  <p>Mencetak manusia yang baik jujur berani dan benar</p>
+</header>
+
+<nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#program">Program</a>
+  <a href="#kontak">Kontak</a>
+  <a href="#donasi">Donasi</a>
+</nav>
+
+<section id="tentang">
+  <h2>Tentang Kami</h2>
+  <p>Yayasan Pendidikan islam Al-kautsar adalah organisasi yang berdedikasi untuk memberikan akses pendidikan yang layak kepada seluruh makhluk di seluruh Dunia.</p>
+</section>
+
+<section id="program">
+  <h2>Program Kami</h2>
+  <ul>
+    <li>Mencetak generasi yang tidak menutup matanya akan kebathilan</li>
+    <li>Menjadikan manusia yang memanusiakan manusia</li>
+    <li>Menjadi layak sebagai manusia</li>
+  </ul>
+</section>
+
+<section id="kontak">
+  <h2>Kontak Kami</h2>
+  <p>Instagram: @alkautsar_tercinta</p>
+  <p>Youtube: Al-kautsarrr</p>
+  <p>Telp: 08xxxxxxxxx</p>
+</section>
+
+<section id="donasi">
+  <h2>Donasi</h2>
+  <form class="donasi-form" onsubmit="handleDonasi(event)">
+    <input type="text" placeholder="Nama Anda" required />
+    <input type="email" placeholder="Email" required />
+    <input type="number" placeholder="Jumlah Donasi (Rp)" required />
+    <textarea placeholder="Pesan (opsional)"></textarea>
+    <button type="submit">Kirim Donasi</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Pondok Pesantren Al-kautsar</p>
+</footer>
+
+<script>
+  function handleDonasi(e) {
+    e.preventDefault();
+    alert("Terima kasih atas donasi Anda! Tim kami akan segera menghubungi.");
+    e.target.reset();
+  }
+</script>
+
+</body>
+</html>
